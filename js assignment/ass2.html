@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ass2 if -else</title>
+</head>
+<body>
+    <script> 
+    // Q.1 Enter two numbers and find the biggest number.
+     let Q1num1 = 10;
+     let Q1num2 = 20;
+     if(Q1num1>Q1num2){
+         console.log("greater is",Q1num1);
+     }
+     else if(Q1num1<Q1num2 ){
+        console.log("greater is",Q1num2);
+     }
+     else if(Q1num1==Q1num2){
+        console.log("numbers are equal");
+     }
+     else{
+         console.log("enter number only")
+     }
+     //Q.2 Enter a number and check if it is odd or even.
+     let Q2num = -12;
+     if(Q2num%2 ==0 && Q2num>0 ){
+         console.log("even number")
+     }
+     else if(Q2num%2 ==1 && Q2num>0 ){
+         console.log("odd number")
+     }
+     else{
+         console.log(" enter proper number")
+     }
+     //Q.3 Enter a number and check it is positive negative or zero
+     let Q3num = 0;
+     if(Q3num >0){
+         console.log("number is positive")
+     }
+     else if(Q3num <0){
+        console.log("number is negative")
+     }
+     else{
+        console.log("number is zero")
+     }
+     //Q.4 Enter a number and check if it is divisible by 3 or 5.
+     let Q4num = 10;
+     if(Q4num%3 ==0){
+         console.log("number is divisible by 3")
+     }
+     else if(Q4num%5 ==0){
+        console.log("number is divisible by 5")
+     }
+     else{
+         console.log("given number is not divisible by 3 or 5")
+     }
+     //Q.5 Enter a number and find its absolute value.
+     let Q5num = -10;
+     if(Q5num <0){
+       console.log(Q5num *-1)
+       }
+     //Q.6 Enter 3 number and find biggest of them
+     let Q6num1 =10;
+     let Q6num2 =20;
+     let Q6num3 =30;
+     if(Q6num1> Q6num2 && Q6num1>Q6num3){
+         console.log("greater number is",Q6num1)
+     } 
+     else if(Q6num2>Q6num1 && Q6num2>Q6num3){
+         console.log("greater num is",Q6num2)
+     }
+     else if(Q6num3>Q6num1 && Q6num3>Q6num2){
+         console.log("greater num is",Q6num3)
+     }
+     else{
+         console.log("number is equal")
+     }
+     //Q.7 Enter 3 numbers and find the second smallest number.
+     let Q7num1 = 12;
+     let Q7num2 = 10;
+     let Q7num3 = 13;
+     if(Q7num1>Q7num2 && Q7num2>Q7num3){
+         console.log(" second largest number is",Q7num2)
+     }
+     else if(Q7num3>Q7num2 && Q7num2>Q7num1){
+         console.log("second largest num is",Q7num2)
+     }
+     else if(Q7num3>Q7num1 && Q7num1>Q7num2){
+         console.log("second largest num is",Q7num1)
+     }
+     else if(Q7num2>Q7num1 && Q7num1>Q7num3){
+         console.log("second largest num is",Q7num1)
+     }
+     else if(Q7num2>Q7num3 && Q7num3>Q7num1){
+         console.log("second largest num is",Q7num3)
+     }
+     else if(Q7num1>Q7num3 && Q7num3>Q7num2){
+         console.log("second largest num is",Q7num3)
+     }
+     else{
+         console.log("enter proper num")
+     }
+     // Q.8 Enter three angles of triangle and check if triangle is valid or not
+     let Q8num1 = 120;
+     let Q8num2 = 30;
+     let Q8num3 = 40;
+     let Q8sum = Q8num1+Q8num2+Q8num3;
+     if(Q8sum ==180){
+         console.log("triangle is valid")
+     }
+     else{
+        console.log("tringle is  not valid")
+     }
+     //Q.9 Enter 3 sides of a triangle and check if triangle is valid or not. If valid than check if it is equilateral, isosceles or scalene traingle
+     let x = 100;
+     let y = 50;
+     let z = 30;
+     let Q9sum = x + y + z;
+      if(Q9sum ==180){
+          console.log("triangle is valid")
+          if(x==y && y==z && x==z){
+              console.log("triangle is equilateral")
+          }
+          else if(x==y || y==z || x==z){
+              console.log("triangle is isosceles")
+          }
+         else if(x != y && y !=z && x !=z){
+            console.log("triangle is scalene")
+         }
+      }
+      // Q.10 Enter a year and check if the year is leap year or not( 2100 is not a leap year)
+      let leapYear = 2015;
+      if(leapYear%100 ==0){
+          if(leapYear%400 ==0){
+              console.log("this is leap year")
+          }
+          else{
+              console.log("this is not leap year")
+          }
+      }
+      else if(leapYear%4 ==0){
+            console.log(" this is a leap year")
+        } 
+      else{
+          console.log("this is not leap year")
+      }  
+      //Q.11 Enter a 3 digit number and check if it's reverse is equal to the original number.
+      let Q11num = 121;
+      let Q11lastnum = Q11num% 10;
+      console.log(Q11lastnum);
+      let middleNum = parseInt(123/10);
+      letQ11middleNum = middleNum%10;
+      let Q11firstNum = parseInt(middleNum/10);
+      console.log(Q11firstNum);
+      let rev = Q11lastnum*100 + letQ11middleNum*10 + Q11firstNum;
+      if(Q11num == rev){
+        console.log(" reverse number is equal to original number")
+      }
+      else{
+          console.log("reverse number is not equal to original number ")
+      }
+      //Q.12 Enter a number from 0-6 and print day of week according, 0 for Sunday , 1 for Monday and so on.
+      let Q12num =7;
+      if(Q12num ==0){
+          console.log("today is sunday")
+      }
+      else if(Q12num ==1){
+        console.log("today is monday")
+      }
+      else if(Q12num ==2){
+        console.log("today is tuesday")
+      } else if(Q12num ==3){
+        console.log("today is wednesday")
+      } else if(Q12num ==4){
+        console.log("today is thursday")
+      } else if(Q12num ==5){
+        console.log("today is friday")
+      } else if(Q12num ==6){
+        console.log("today is saturday")
+      }
+      else{
+          console.log("please enter number between 0 to 6")
+      }
+      //Q.13 Enter marks in five subjects and find avg and grade .rule for grade: 
+      /*avg > = 90 , Grade A
+      avg > = 80 and less than 90, Grade B
+       avg > = 70 and less than 80, Grade C
+      Else: Low grade
+      */
+     let phy,chem,bio,math,eng;
+     phy = 100;
+     chem = 90;
+     bio = 80;
+     math = 90;
+     eng =95;
+     let avg =(phy+chem+bio+math+eng)/5;
+     console.log(avg);
+     if(avg >=90){
+         console.log("Grade A")
+     }
+     else if(avg>=80 && avg<90){
+         console.log("Grade B")
+     }
+     else if(avg>=70 && avg<80){
+         console.log("Grade C")
+     }
+     else{
+         console.log("Low grade")
+     }
+   /* Q.14 Enter electricity unit and calculate amount to pay
+        For first 50 units, Rs: 1/unit
+        For next 100 units, 2/unit
+        For next 100 units, 3/ units
+        For units above 250, 4/units      
+        For all bills above 150 units additional surcharge of 20%  of total bill amount is added.
+   */
+   let unit =200;
+   let bill ;
+   let finalBill;
+   if(unit>0 && unit<=50){
+       console.log(bill= unit*1)
+   }
+   else if(unit>51 && unit<=150){
+       console.log(bill=1*50+(unit-50)*2)
+   }
+   else if(unit>151 && unit<=250){
+      bill = 1*50+2*100+(unit-150)*3;
+      console.log(bill)
+      finalBill = bill+(0.2*bill);
+      console.log(finalBill);
+   }
+   else if(unit>251){
+       bill =1*50+2*100+3*100+(unit-250)*4;
+       console.log(bill);
+       finalBill = bill +(0.2*bill);
+       console.log(finalBill);
+   }
+   else{
+       console.log("enter proper number")
+   }
+     /* Q.15 Enter a number and print "Hello" if divisble by 3. Print "World" if divisble by 5. And print "HelloWorld" if divisble by 15.
+     */
+     let Q15num = 10;
+     if(Q15num%15== 0){
+         console.log("HelloWorld")
+     }
+     else if(Q15num%3 ==0){
+         console.log("Hello")
+     }
+     else if(Q15num%5 ==0){
+         console.log("World")
+     }
+     else{
+         console.log("enter proper number")
+     }
+    </script>  
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop pattern</title>
+</head>
+<body>
+    <script>
+    /*  1
+        12
+        123
+        1234
+        12345
+        */
+     let r,c,ch;
+     for(r=1;r<=5;r++)
+     {
+         ch=""
+         for(c=1;c<=r;c++)
+         {
+             ch =ch + c
+         }
+         console.log(ch)
+     }
+   /*   
+      1
+      22
+      333
+      4444
+      55555  */
+      for(r=1;r<=5;r++){
+         ch=""
+         for(c=1;c<=r;c++){
+             ch =ch + r
+         }
+         console.log(ch)
+     }
+       
+       //
+       let sum=0, p=1;
+     for(r=1;r<=2;r++){  
+         console.log("row start"+r)
+        for(c=1;c<=5;c++)
+        {
+          console.log(c)
+          sum = sum + c
+            p = p * c
+         }
+         console.log("row start"+r)
+        console.log(p)
+   }
+
+
+    </script>
+</body>
+</html>

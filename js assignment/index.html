@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+
+    console.log("hello world");
+    //question 1 Take two numbers and find their sum, diff, mul, div and modulus
+    let a = 10;
+    let b= 20;
+    let sum = a+b;
+    let diff = a-b;
+    let multi = a*b;
+    let div = a/b;
+    let mod = a%b;
+    console.log(`sum of ${a} and ${b} is ${sum}`);
+    console.log(`sum of ${a} and ${b} is ${diff}`);
+    console.log(`sum of ${a} and ${b} is ${multi}`);
+    console.log(`sum of ${a} and ${b} is ${div}`);
+    console.log(`sum of ${a} and ${b} is ${mod}`);
+
+   //question 2
+     let num1 = 10;
+     let num2 = 3;
+     console.log(parseInt(num1/num2));
+
+     // question 3
+       let num3 = 10;
+       let num4 = 3;
+       let findPower = num3**num4;
+       console.log(`power of ${num3} over ${num4} is ${findPower}`);
+
+       // question 4
+        let num1Q4 = 10;
+        let num2Q4 = 4;
+        let Q4div = num1Q4 /num2Q4;
+        let Q4div1 =parseInt(num1Q4/num2Q4) ;
+        let Q4diff = Q4div - Q4div1;
+        console.log(Q4diff);
+         
+       //question 5
+       let math = 50;
+       let eng = 40;
+       let hindi = 60;
+       let sci = 65;
+       let history = 62;
+       let avg = (math+eng+hindi+sci+history)/5;
+       console.log(`avr of 5 subs is ${avg} `);
+
+       // question 6
+       let buyP =10000;
+       let sellP = 5000;
+       let profit = sellP -buyP;
+       console.log(` profit or loss is ${profit}`) ;
+
+       // question 7
+       let numQ7 = 15;
+       let lastDigit = numQ7 % 10 ;
+       console.log(`last digit of ${numQ7} is ${lastDigit}`);
+
+       //question 8
+       let numQ8 = 15;
+       let lastNumQ8 = numQ8 % 10;
+       console.log(`last digit of ${numQ8} is ${lastNumQ8 }`);
+
+       let firstNumQ8 = parseInt(numQ8/10);
+       console.log(`first digit of ${numQ8} is ${firstNumQ8 }`)
+       
+       // question 9
+       let numQ9 = 12;
+       let lastQ9 = numQ9 % 10;
+       let firstQ9 = (numQ9 - lastQ9)/10;
+       let reverseQ9 = (lastQ9*10)+ firstQ9
+       console.log("numQ10 value 12 is change to ", reverseQ9);
+
+       //question 10
+       let numQ10 = 132;
+       let rem1Q10 = numQ10 % 10;  // last digit
+       let rem2Q10 = numQ10 % 100;
+       let middleDigQ10 = (rem2Q10 - rem1Q10)/10; 
+       let firstDigitQ10 = (numQ10 -rem2Q10)/100;
+       let reverseDigQ10 = (rem1Q10*100) + (middleDigQ10*10)+ firstDigitQ10;
+       console.log("numQ10 value 132 is change to ", reverseDigQ10);
+
+      // question 11
+      let num1Q11 = 10;
+      let num2Q11 = 20;
+      let addNum3 = num1Q11 + num2Q11;
+      console.log(addNum3);
+      let ansNum1 = addNum3 - num1Q11;      
+      console.log(ansNum1);
+      let ansNum2 = addNum3 - ansNum1;
+      console.log(ansNum2);
+
+      // question 12
+      let num1Q12 = 5;    
+      let num2Q12 = 6;
+       num1Q12 = num1Q12 + num2Q12;
+      num2Q12 = num1Q12 - num2Q12;
+      console.log("num2Q12 prev value 6 is change to", num2Q12); // 5
+      num1Q12 = num1Q12 - num2Q12;
+      console.log("num1Q12 prev value 5 is change to ", num1Q12);
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forloop L2</title>
+</head>
+<body>
+    <script>
+     //
+     let i;
+     let num = 123;
+     let count =0
+     for(i=num;i>0; i=parseInt(i/10)){
+        // console.log(i%10)
+         count= count +1
+     }
+    //console.log(count);
+      // level 2
+     //Q.1  Write a program to find HCF and LCM of two numbers
+
+     //Q.2 Input a number and find sum of its digit
+     let num1 = 456;
+     
+     let digit = 0;
+     let total = 0;
+     for(i=num1;i>0; i=parseInt(i/10)){
+        digit=i%10
+         console.log(digit)
+         console.log(`digit is ${digit}`)
+        total = total + digit
+     }
+     console.log(total) 
+    
+     //Q.3 Input a number and print all even digit
+     let num3 = 453;
+     let digit3 = 0;
+     for(i=num3;i>0; i= parseInt(i/10)){
+         digit3 = i%10
+         if(digit3%2==0){
+             console.log(`${digit3} digit is even`)
+         }else{
+            console.log(`${digit3} digit is odd`)
+         }
+     }
+
+     //Q.4 Check if a number is palindrome or not
+
+     //Q.5 Count the number of zeros in a number
+     let num5 = 400;
+     let digit5 = 0;
+     let count5 = 0;
+     for(i=num5; i>0; i= parseInt(i/10)){
+         digit5 = i%10;
+         if(digit5 ==0){
+             count5 = count5 +1
+         }
+     }
+     //console.log(count5)
+
+     //Q.6 Find all prime number between two inputted numbers 
+    
+     //Q.7 Check if a number is an armstrong number or not.
+     let num7 = 152;
+     let digitQ7 =0;
+     let as = 0;
+     for(i=num7;i>0; i=parseInt(i/10)){
+         digitQ7 = i%10
+         console.log(digitQ7);
+         as = as + digitQ7**3
+     }
+     console.log(as)
+     if(num7==as){
+         console.log(`${num7} is armstrong num`)
+     }else{
+        console.log(`${num7} is not armstrong num`)
+     }
+      
+     //Q.9 Check if a number is a special number or not
+    let numQ9 = 145;
+    let dQ9 =0;
+    let sum = 0;
+    let fa =1;
+    for(i=numQ9;i>0; i= parseInt(i/10)){
+            dQ9 = i%10
+            console.log(dQ9)
+           for(i=1;i<=digit;i++){
+               fa = fa *i;
+               console.log(fa)
+           }
+    }
+     
+     
+
+     /*Q.10 FizzBuzz problem( solve without using modulus)
+    For number from 1 to 100 if number is divisible by 3 print Hello if divisible by 5 print World, if divisible by 15 print HelloWorld else print the number itself
+     */
+    </script>
+</body>
+</html>
